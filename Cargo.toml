@@ -6,13 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 
-[build]
-target = "armv7-unknown-linux-musleabihf"
-[target.armv7-unknown-linux-c]
-linker = "arm-linux-gnueabihf-ld"
-
-
 
 [dependencies]
-gtk = { version = "0.9.6", package = "gtk4", features = ["v4_12"] }
+hound = "3.5.1"
+iced = "0.13.1"
+pitch-detection = "0.3.0"
 
